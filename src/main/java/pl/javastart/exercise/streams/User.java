@@ -24,7 +24,8 @@ public class User {
         return nickname;
     }
 
-    @Override public boolean equals(Object o) {
+    @Override
+    public boolean equals(Object o) {
         if (this == o)
             return true;
         if (o == null || getClass() != o.getClass())
@@ -39,7 +40,8 @@ public class User {
         return nickname.equals(user.nickname);
     }
 
-    @Override public int hashCode() {
+    @Override
+    public int hashCode() {
         int result = name.hashCode();
         result = 31 * result + age;
         result = 31 * result + nickname.hashCode();

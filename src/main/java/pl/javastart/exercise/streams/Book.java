@@ -12,7 +12,8 @@ public class Book {
         return title;
     }
 
-    @Override public boolean equals(Object o) {
+    @Override
+    public boolean equals(Object o) {
         if (this == o)
             return true;
         if (o == null || getClass() != o.getClass())
@@ -23,7 +24,8 @@ public class Book {
         return title.equals(book.title);
     }
 
-    @Override public int hashCode() {
+    @Override
+    public int hashCode() {
         return title.hashCode();
     }
 }
